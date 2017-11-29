@@ -1,8 +1,11 @@
 html, body {
   font-size: 16px;
   background-color: #ccc;
+  margin: 0;
+  padding-right: -0px;
+  width: 100%;
 }
-a {
+a, .c-image-overlay__content h3 {
   color: darkred;
 }
 .nav {
@@ -12,6 +15,9 @@ a {
 li a, .navbar-brand {
   margin: 15px 25px;
   color: darkred;
+}
+.center {
+  text-align: center;
 }
 .jumbotron {
   height: auto;
@@ -35,6 +41,7 @@ li a, .navbar-brand {
   padding: 20px;
   font-weight: bold;
   margin-top: 10px;
+  margin-bottom: 10px;
   /*margin-left: 200px;*/
   border: 2px solid darkred;
   box-shadow: 3px 3px 1px gray;
@@ -64,4 +71,13 @@ span.a-footer.c-brand__second-word.t-title__second-word {
 div.o-section__description {
   color: darkred;
   font-weight: bold;
+}
+.standout {
+  margin-top: 20px;
+}
+.border {
+  border: 3px solid gray;
+}
+.c-image-overlay__deco-line {
+  margin: auto;
 }

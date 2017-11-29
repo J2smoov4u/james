@@ -146,6 +146,7 @@ function setup_nivo_lightbox()
             },
             errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
         });
+      //  $document.getElementId('name').upperCase();
 
     }
 }
