@@ -17,6 +17,7 @@ body {margin:0;}
   background-color: white;
   border-bottom: 2px solid darkred;
   width: 100%;
+  opacity: .85;
 }
 
 
@@ -29,13 +30,10 @@ body {margin:0;}
   padding: 14px 50px;
   text-decoration: none;
   font-size: 20px;
+
 }
 
 .topnav a:hover {
-
-
-
-
   background-color: darkred;
   color: white;
 }
@@ -57,10 +55,29 @@ body {margin:0;}
 a.active.home i:hover {
   color: white;
 }
+#readOn {
+  display: none;
+}
+button {
+  color: darkred;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 2px black;
+}
+@media screen and (max-width: 400px) {
+  html,
+  body {
+    color: black;
 
+  }
+}
 @media screen and (max-width: 1150px) {
   .topnav a {
     padding: 14px 25px;
+  }
+  button {
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {

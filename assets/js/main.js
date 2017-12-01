@@ -31,16 +31,24 @@ var lastScrollTop = 0;
 $(window).scroll(function(){
   var scrollTop = $(this).scrollTop();
   if (scrollTop - lastScrollTop > 50){
-    var navHeight = $('#navbar').css('height');
-    $('#navbar').animate({top: '-' + navHeight}, 150);
+    var navHeight = $('#myTopnav').css('height');
+    $('#myTopnav').animate({top: '-' + navHeight}, 150);
     lastScrollTop = scrollTop;
-  } else if (lastScrollTop - scrollTop > 50) {
-    $('#navbar').animate({top: '0px'}, 150);
+  } else if (lastScrollTop - scrollTop > 20) {
+    $('#myTopnav').animate({top: '0px'}, 150);
     lastScrollTop = scrollTop;
   }
 });
 
-
+// Read more buttons
+function myFunction() {
+    var x = document.getElementById("read");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 function setup_progress_bar_animation()
 {
