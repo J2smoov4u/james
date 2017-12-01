@@ -20,11 +20,11 @@ $(document).ready(function() {
 });
 // Navigation Bar
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var j = document.getElementById("myTopnav");
+    if (j.className === "topnav") {
+        j.className += " responsive";
     } else {
-        x.className = "topnav";
+        j.className = "topnav";
     }
 }
 var lastScrollTop = 0;
