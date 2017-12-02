@@ -41,7 +41,7 @@ $(window).scroll(function(){
 });
 
 // Read more buttons
-function myFunction() {
+function james() {
     var x = document.getElementById("read");
     if (x.style.display === "none") {
         x.style.display = "block";

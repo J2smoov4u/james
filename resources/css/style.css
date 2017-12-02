@@ -132,7 +132,7 @@ li a, .navbar-brand {
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 75px;
+  padding-top: 75px;
   margin-bottom: 0;
 }
 .jumbotron h1 {
