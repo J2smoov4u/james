@@ -34,7 +34,7 @@ $(window).scroll(function(){
     var navHeight = $('#myTopnav').css('height');
     $('#myTopnav').animate({top: '-' + navHeight}, 150);
     lastScrollTop = scrollTop;
-  } else if (lastScrollTop - scrollTop > 20) {
+  } else if (lastScrollTop - scrollTop > 35) {
     $('#myTopnav').animate({top: '0px'}, 150);
     lastScrollTop = scrollTop;
   }
@@ -42,6 +42,14 @@ $(window).scroll(function(){
 
 // Read more buttons
 function james() {
+    var x = document.getElementById("read");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function james1() {
     var x = document.getElementById("read");
     if (x.style.display === "none") {
         x.style.display = "block";

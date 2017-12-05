@@ -2,10 +2,13 @@ html, body {
   font-size: 16px;
   background-color: #ccc;
   margin: 0;
-  padding-right: -0px;
+
   width: 100%;
 }
 .html {
+  width: 100%;
+}
+.o-section {
   width: 100%;
 }
 body {margin:0;}
@@ -19,7 +22,9 @@ body {margin:0;}
   width: 100%;
   opacity: .85;
 }
-
+a {
+  text: none;
+}
 
 .topnav a {
   float: left;
@@ -64,12 +69,27 @@ button {
   padding: 10px 20px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 2px black;
+  border-radius: 5px;
+}
+a.btn-alert {
+  margin: 20px;
 }
 @media screen and (max-width: 400px) {
   html,
   body {
-    color: black;
+    color: slategray;
+  }
+  #small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
+    margin: 10px;
+  }
+  a.btn-alert {
+    width: 200px;
+    margin: 20px 10px;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -78,6 +98,14 @@ button {
   }
   button {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .c-header__top {
+    margin-top: 20px;
+  }
+  .c-header__avatar {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 800px) {
