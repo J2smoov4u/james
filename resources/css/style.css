@@ -5,14 +5,26 @@ html, body {
 
   width: 100%;
 }
-.html {
+html.html.js-enabled {
   width: 100%;
 }
 .o-section {
-  width: 100%;
+  min-width: 100%;
+}
+.t-title__first-word {
+  text-transform: uppercase;
+  font-weight: 400;
 }
 body {margin:0;}
-
+section.o-selection.o-selection--header.t-section.t-section--header {
+  width: 100%;
+}
+#about p {
+  color: black;
+}
+.center {
+  text-align: center;
+}
 .topnav {
   position: fixed;
   z-index: 50;
@@ -22,8 +34,14 @@ body {margin:0;}
   width: 100%;
   opacity: .85;
 }
-a {
-  text: none;
+span {
+  text-decoration: none;
+  color: darkred;
+  font-weight: bold;
+}
+.c-brand__sizer {
+  color: gray;
+  font-weight: 300;
 }
 
 .topnav a {
@@ -60,6 +78,92 @@ a {
 a.active.home i:hover {
   color: white;
 }
+/*  CONTACT BUTTON & MODAL  */
+.contact-form {
+  /*display: none;*/
+  margin-top: 750px;
+  margin-right: 20px;
+  float: right;
+  z-index: 25;
+}
+#contact {
+
+  color: darkred;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  /*box-shadow: 2px 2px 2px black;
+  border-radius: 50px;*/
+  max-width: 75px;
+}
+input[type=text],
+ input[type=number],
+  input[type=email],
+   select,
+    textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: darkred;
+  padding: 12px 20px;
+  border: 1px solid darkred;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.m-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*Modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 50%;/*size of the modal*/
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 350px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 36px;
+  font-weight: bold;
+}
+.close:hover,
+  .close:focus {
+  color: darkred;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 #read {
   display: none;
 }
@@ -79,6 +183,10 @@ a.btn-alert {
   body {
     color: slategray;
   }
+  html.html.js-enabled {
+    width: 100%;
+    overflow: hidden;
+  }
   #small {
     display: flex;
     flex-direction: column;
@@ -91,10 +199,16 @@ a.btn-alert {
     width: 200px;
     margin: 20px 10px;
   }
+  .contact-form {
+    display: none;
+  }
 }
 @media screen and (max-width: 1150px) {
   .topnav a {
     padding: 14px 25px;
+  }
+  .contact-form {
+    display: none;
   }
   button {
     width: 100%;
@@ -107,9 +221,15 @@ a.btn-alert {
   .c-header__avatar {
     margin-top: 30px;
   }
+  .contact-form {
+    display: none;
+  }
 }
 @media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {
+    display: none;
+  }
+  .contact-form {
     display: none;
   }
   .topnav a.icon {
@@ -130,6 +250,9 @@ a.btn-alert {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .contact-form {
+    display: none;
   }
   .topnav.responsive a {
     float: none;
